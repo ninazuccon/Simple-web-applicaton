@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+	<link rel="stylesheet" href="dizajn.css">
+	<meta charset="UTF-8">
+	<title>Najljepše biciklističke destinacije svijeta</title>
+</head>
+
+<body>
+	<div id="header">
+		<h1><em>Najljepše biciklističke destinacije svijeta</em></h1><br>
+		<a href="index.html">
+		<div id="poc">
+			<img class="bottom" src ="pocetna3.jpg" alt="Pocetna">
+			<img class="top" src="pocetna4.jpg" alt="Pocetna">
+		</div><br>
+		</a>
+	</div>
+
+	<div id="content">
+		<nav>
+			<ul class="item">
+				<li><a href="index.html">Početna stranica</a></li>
+				<li><a href="obrazac.html">Stranica za pretraživanje</a></li>
+				<li><a href="https://www.fer.unizg.hr/predmet/or">Službena stranica kolegija Otvoreno računarstvo</a></li>
+				<li><a href="https://www.fer.unizg.hr/" target="_blank">Službena stranica FER-a</a></li>
+				<li><a href="mailto:nina.zuccon@fer.hr">e-pošta autora</a></li>
+				<li><a href="podaci.xml">Podaci</a></li>
+			</ul>
+		</nav>
+		<section id="uvod">
+			<h2>Ovdje možete pretraživati staze po obilježjima koja Vas zanimaju!</h2>
+			<form action="pretraga.php">
+				<table id="search">
+					<tr>
+						<th><em>Destinacija</em></th>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Država:</th>
+						<td><input type="text" name="drzava"/></td>
+					</tr>
+					<tr>
+						<th><em>Staza</em></th>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Ime staze:</th>
+						<td><input type="text" name="ime_staze"/></td>
+					</tr>
+					<tr>
+						<th>Klima</th>
+						<td><input type="radio" name="klima" value="tropska"> tropska<br>
+							<input type="radio" name="klima" value="suha"> suha<br>
+							<input type="radio" name="klima" value="umjereno-topla"> umjereno-topla<br>
+							<input type="radio" name="klima" value="snježno-šumska"> snježno-šumska<br>
+							<input type="radio" name="klima" value="polarna"> polarna<br></td>
+					</tr>
+					<tr>
+						<th>Smještaj staze:</th>
+						<td><input type="radio" name="smjestaj_staze" value="more"> uz more<br>
+							<input type="radio" name="smjestaj_staze" value="unutrašnjost"> u unutrašnjosti<br>
+							<input type="radio" name="smjestaj_staze" value="jezero"> uz jezero<br></td>
+					</tr>
+					<tr>
+						<th>Vrsta staze:</th>
+						<td><input type="checkbox" name="vrsta_staze[]" value="cesta"> cesta <br>
+							<input type="checkbox" name="vrsta_staze[]" value="drveni_put"> drveni put <br>
+							<input type="checkbox" name="vrsta_staze[]" value="makadam"> makadam <br>
+							<input type="checkbox" name="vrsta_staze[]" value="šumski_put"> šumski put <br></td>
+					</tr>
+					<tr>
+						<th>Težina staze:</th>
+						<td><input type="checkbox" name="tezina_staze[]" value="jedan"> <img src="drop.jpg" alt="kap" height="13"> &nbsp;
+							<input type="checkbox" name="tezina_staze[]" value="dva"> <img src="drop.jpg" alt="kap" height="13"> <img src="drop.jpg" alt="kap" height="13"> &nbsp;
+							<input type="checkbox" name="tezina_staze[]" value="tri"> <img src="drop.jpg" alt="kap" height="13"> <img src="drop.jpg" alt="kap" height="13"> <img src="drop.jpg" alt="kap" height="13"> &nbsp;
+							<input type="checkbox" name="tezina_staze[]" value="cetiri"> <img src="drop.jpg" alt="kap" height="13"> <img src="drop.jpg" alt="kap" height="13"> <img src="drop.jpg" alt="kap" height="13"> <img src="drop.jpg" alt="kap" height="13"> &nbsp;
+							<input type="checkbox" name="tezina_staze[]" value="pet"> <img src="drop.jpg" alt="kap" height="13"> <img src="drop.jpg" alt="kap" height="13"> <img src="drop.jpg" alt="kap" height="13"> <img src="drop.jpg" alt="kap" height="13"> <img src="drop.jpg" alt="kap" height="13"></td>
+					</tr>
+					<tr>  
+						<th>Minimalna nadmorska visina u m:</th> 
+						<td><input type="text" name="nadmorska"/></td>
+					</tr>
+					<tr>
+						<th>Minimalna kilometraža:</th> 
+						<td><input type="text" name="kilometraza"/></td>
+					</tr>
+					<tr>
+						<th>Prometnost</th>
+						<td><input type="checkbox" name="prometnost[]" value="mala"> mala &nbsp; 
+							<input type="checkbox" name="prometnost[]" value="srednja"> srednja &nbsp;
+							<input type="checkbox" name="prometnost[]" value="velika"> velika &nbsp;</td>
+					</tr>
+					<tr>
+						<th><em>Okolica staze</em></th>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Dodatna sportska aktivnost:</th> 
+						<td><select name="aktivnost[]" multiple size="5">
+							<option value="planinarenje"> planinarenje</option>
+							<option value="trčanje"> trčanje</option>
+							<option value="plivanje"> plivanje</option>
+							<option value="veslanje"> veslanje</option>
+							<option value="skijanje"> skijanje</option></select></td>
+					</tr>
+					<tr>
+						<th>Cijena noćenja</th>
+						<td><input type="checkbox" name="cijena_nocenja[]" value="niska"> niska &nbsp; 
+							<input type="checkbox" name="cijena_nocenja[]" value="srednja"> srednja &nbsp;
+							<input type="checkbox" name="cijena_nocenja[]" value="visoka"> visoka &nbsp;</td>
+					</tr>
+					<tr>
+						<th><em>Kulturna baština</em></th>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Muzeji:</th> 
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<th>Građevine:</th> 
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<th>Parkovi i šetnice:</th> 
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<td><button type="submit" value="Submit">Potvrdi unos</button></td>
+						<td><button type="reset" value="Cancel">Poništi unos</button></td>
+					</tr>
+				</table>
+			</form>
+		</section>
+	</div>
+
+	<div id="footer">
+		<h3>Nina Zuccon</h3>
+		<img src="logo.jpg" alt ="logo" height="70" width="70">
+	</div>
+</body>
+<</html>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE podaci SYSTEM "gramatika.dtd">
+<?xml-stylesheet type="text/xsl" href="pretvorba.xsl"?>
+<podaci>
+  <destinacija drzava="Kanada">
+    <staza id="1" idwiki="Windsor,_Ontario" idloc="Windsor%27s_Community_Museum" trailhead="Windsor" ime_staze="The Great Trail" klima="snježno-šumska" smjestaj_staze="unutrašnjost" nadmorska_visina="2185" kilometraza="24000">
+      <vrsta_staze>
+        <cesta/>
+        <makadam/>
+      </vrsta_staze>
+      <tezina_staze>
+        <pet/>
+      </tezina_staze>
+      <prometnost>
+        <velika/>
+      </prometnost>
+    </staza>
+    <okolica_staze>
+      <dodatna_sportska_aktivnost>
+        <skijanje/>
+      </dodatna_sportska_aktivnost>
+      <cijena_nocenja>
+        <srednja/>
+      </cijena_nocenja>
+      <kulturna_bastina muzeji="Canada's Sports Hall of Fame" gradjevine="Calgary Tower" parkovi_i_setnice="Fish Creek Provincial Park"></kulturna_bastina>
+    </okolica_staze>
+  </destinacija>
+
+  <destinacija drzava="Engleska">
+    <staza id="2" idwiki="Winchester" idloc="Winchester_Cathedral" trailhead="Winchester" ime_staze="The South Downs Way" klima="umjereno-topla" smjestaj_staze="unutrašnjost" nadmorska_visina="4150" kilometraza="160">
+      <vrsta_staze>
+        <makadam/>
+      </vrsta_staze>
+      <tezina_staze>
+        <pet/>
+      </tezina_staze>
+      <prometnost>
+        <mala/>
+      </prometnost>
+    </staza>
+    <okolica_staze>
+      <dodatna_sportska_aktivnost>
+        <planinarenje/>
+        <trčanje/>
+      </dodatna_sportska_aktivnost>
+      <cijena_nocenja>
+        <visoka/>
+      </cijena_nocenja>
+      <kulturna_bastina muzeji="The City Museum of Winchester Castle" gradjevine="Winchester Castle" parkovi_i_setnice="Winchester park and ride"></kulturna_bastina>
+    </okolica_staze>
+  </destinacija>
+
+  <destinacija drzava="Australija">
+    <staza id="3" idwiki="Mundaring,_Western_Australia" idloc="Perth_Zoo" trailhead="Mundaring" ime_staze="Munda Biddi Trail" klima="umjereno-topla" smjestaj_staze="unutrašnjost" nadmorska_visina="4000" kilometraza="1000">
+      <vrsta_staze>
+        <šumski_put/>
+      </vrsta_staze>
+      <tezina_staze>
+        <cetiri/>
+      </tezina_staze>
+      <prometnost>
+        <mala/>
+      </prometnost>
+    </staza>
+    <okolica_staze>
+      <dodatna_sportska_aktivnost></dodatna_sportska_aktivnost>
+      <cijena_nocenja>
+        <srednja/>
+      </cijena_nocenja>
+      <kulturna_bastina muzeji="The Steam Locomotive Museum of Collie" gradjevine="St Paul's Anglican Church of Jarrahdale" parkovi_i_setnice="Gooralong Park"></kulturna_bastina>
+    </okolica_staze>
+  </destinacija>
+
+  <destinacija drzava="Tajvan">
+    <staza id="4" idwiki="Sun_Moon_Lake" idloc="Taroko_National_Park" trailhead="Sun Moon Lake" ime_staze="Around the Sun Moon Lake" klima="tropska" smjestaj_staze="jezero" nadmorska_visina="748" kilometraza="782">
+      <vrsta_staze>
+        <drveni_put/>
+      </vrsta_staze>
+      <tezina_staze>
+        <tri/>
+      </tezina_staze>
+      <prometnost>
+        <mala/>
+      </prometnost>
+    </staza>
+    <okolica_staze>
+      <dodatna_sportska_aktivnost>
+        <planinarenje/>
+        <trčanje/>
+      </dodatna_sportska_aktivnost>
+      <cijena_nocenja>
+        <niska/>
+      </cijena_nocenja>
+      <kulturna_bastina muzeji="The Muh Sheng Museum of Entomology of Puli" gradjevine="Wenwu Temple at Itashao" parkovi_i_setnice="Wangyou Forest"></kulturna_bastina>
+    </okolica_staze>
+  </destinacija>
+
+  <destinacija drzava="Kolorado">
+    <staza id="5" idwiki="Denver" idloc="City_Park,_Denver" trailhead="Denver" ime_staze="Colorado Trail" klima="umjereno-topla" smjestaj_staze="unutrašnjost" nadmorska_visina="4045" kilometraza="782">
+      <vrsta_staze>
+        <makadam/>
+        <šumski_put/>
+      </vrsta_staze>
+      <tezina_staze>
+        <cetiri/>
+      </tezina_staze>
+      <prometnost>
+        <mala/>
+      </prometnost>
+    </staza>
+    <okolica_staze>
+      <dodatna_sportska_aktivnost>
+        <planinarenje/>
+      </dodatna_sportska_aktivnost>
+      <cijena_nocenja>
+        <niska/>
+      </cijena_nocenja>
+      <kulturna_bastina muzeji="Durango and Silverton Narrow Gauge Railroad and Museum" gradjevine="Mesa Verde" parkovi_i_setnice="Rio Grande National Forest"></kulturna_bastina>
+    </okolica_staze>
+  </destinacija>
+</podaci>

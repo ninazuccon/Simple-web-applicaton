@@ -1,0 +1,42 @@
+<!ELEMENT podaci (destinacija+)>
+<!ELEMENT destinacija (staza, okolica_staze)>
+<!ATTLIST destinacija drzava CDATA #REQUIRED>
+<!ELEMENT staza (vrsta_staze, tezina_staze, prometnost)>
+<!ATTLIST staza id CDATA #REQUIRED>
+<!ATTLIST staza idwiki CDATA #REQUIRED>
+<!ATTLIST staza idloc CDATA #REQUIRED>
+<!ATTLIST staza ime_staze CDATA "NOT KNOWN">
+<!ATTLIST staza klima (tropska|suha|umjereno-topla|snježno-šumska|polarna) "umjereno-topla">
+<!ATTLIST staza smjestaj_staze (more|unutrašnjost|jezero) "unutrašnjost">
+<!ATTLIST staza nadmorska_visina CDATA "NOT KNOWN">
+<!ATTLIST staza kilometraza CDATA "NOT KNOWN">
+<!ELEMENT vrsta_staze (cesta?, drveni_put? ,makadam? ,šumski_put?)>
+<!ELEMENT cesta EMPTY>
+<!ELEMENT drveni_put EMPTY>
+<!ELEMENT makadam EMPTY>
+<!ELEMENT šumski_put EMPTY>
+<!ELEMENT tezina_staze (jedan?, dva?, tri?, cetiri?, pet?)>
+<!ELEMENT jedan EMPTY>
+<!ELEMENT dva EMPTY>
+<!ELEMENT tri EMPTY>
+<!ELEMENT cetiri EMPTY>
+<!ELEMENT pet EMPTY>
+<!ELEMENT prometnost (mala?, umjerena?, velika?)>
+<!ELEMENT mala EMPTY>
+<!ELEMENT umjerena EMPTY>
+<!ELEMENT velika EMPTY>
+<!ELEMENT okolica_staze (dodatna_sportska_aktivnost, cijena_nocenja, kulturna_bastina)>
+<!ELEMENT dodatna_sportska_aktivnost (planinarenje?,trčanje?,plivanje?,veslanje?,skijanje?)>
+<!ELEMENT planinarenje EMPTY>
+<!ELEMENT trcanje EMPTY>
+<!ELEMENT plivanje EMPTY>
+<!ELEMENT veslanje EMPTY>
+<!ELEMENT skijanje EMPTY>
+<!ELEMENT cijena_nocenja (niska?|srednja?|visoka?)>
+<!ELEMENT niska EMPTY>
+<!ELEMENT srednja EMPTY>
+<!ELEMENT visoka EMPTY>
+<!ELEMENT kulturna_bastina EMPTY>
+<!ATTLIST kulturna_bastina muzeji CDATA #IMPLIED>
+<!ATTLIST kulturna_bastina gradjevine CDATA #IMPLIED>
+<!ATTLIST kulturna_bastina parkovi_i_setnice CDATA #IMPLIED>
